@@ -1,0 +1,21 @@
+:host {
+    flex-grow: 1;
+
+    .wrapper {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px 0px;
+
+        .input {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            width: 80%;
+        }
+    }
+}

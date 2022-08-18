@@ -1,0 +1,23 @@
+:host {
+    background-color: red;
+    flex-grow: 4;
+
+    .matrix {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 5px;
+
+        .row {
+            display: flex;
+            gap: 5px;
+
+            .cell {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        }
+    }
+}

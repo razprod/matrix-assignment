@@ -1,0 +1,7 @@
+<div class="matrix" *ngIf="matrix">
+  <div class="row" *ngFor="let row of matrix; let x = index">
+    <div class="cell" *ngFor="let cell of row; let y = index; trackBy: trackByIndex">
+      <input type="number" [value]="cell.val" (change)="setCell(x,y, $event)" />
+    </div>
+  </div>
+</div>
